@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correctjs</title>
+
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Correct.js</a>
+            <ul>
+                <li><a href="#docList">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="landing">
+        <div class="text">
+            <h1>A  <span>lightweight</span> <br /> validation library <br /> for javascript </h1>
+            <a href="https://www.npmjs.com/package/correctjs" target="_blank">
+                <button class="btn npm">npm i correctjs</button>
+            </a>
+            <a href="https://github.com/Akifcan/correctjs" target="_blank">
+                <button class="btn github">github</button>
+            </a>
+        </div>
+        <div class="code-example">
+            <script src="https://gist.github.com/Akifcan/558958230faad99bcd6f2f2ccd325071.js"></script>
+        </div>
+    </div>
+
+    <div class="doc" id="docList">
+        <h1>Documentation</h1>
+        <div class="doc-list">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#fields">Fields</a></li>
+                    <li><a href="#required">Required</a></li>
+                    <li><a href="#max">Max</a></li>
+                    <li><a href="#min">Min</a></li>
+                    <li><a href="#between">Between</a></li>
+                    <li><a href="#type">Type</a></li>
+                    <li><a href="#customRegex">Custom Regex</a></li>
+                    <li><a href="#startsWith">Starts With</a></li>
+                    <li><a href="#endsWith">Ends With</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="card" id="fields" style="margin-bottom: 50px;">
+                    <h2>Fields</h2>
+                    
+                    <p>value: This field is  <b>required</b></p>
+                    <p>fieldName: This field is  <b>required</b></p>
+                    <p>message: This field is <b>optional.</b> If you wanna use custom messages use this. </p>
+                    <a href="https://gist.github.com/Akifcan/de1a19d277acf08b018e68e012cac5a3" target="_blank">Full example</a>
+                 
+                    <hr>
+                </div>
+                <div class="card" id="required">
+                    <h2>Required</h2>
+                    <div class="code">
+                        validations: [{type: '<b>required</b>'}]
+                    </div>
+                    <hr>
+                </div>
+                <div class="card" id="min">
+                    <h2>Min</h2>
+                    <div class="code">
+                        validations: [{type: '<b>min|5</b>'}]
+                    </div>
+                    <hr>
+                </div>
+                <div class="card" id="max">
+                    <h2>Max</h2>
+                    <div class="code">
+                        validations: [{type: '<b>max|15</b>'}]
+                    </div>
+                    <hr>
+                </div>
+                <div class="card" id="between">
+                    <h2>Between</h2>
+                    <div class="code">
+                        validations: [{type: '<b>between|5-15</b>'}]
+                    </div>
+                    <hr>
+                </div>
+                <div class="card" id="type">
+                    <h2>Type</h2>
+                    <div class="code">
+                        validations: [{type: '<b>email</b>'}] <small> &nbsp; number</small>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card" id="customRegex">
+                    <h2>Custom Regex</h2>
+                    <div class="code">
+                        validations: [{type: '<b>customRegex|^\\d+$</b>'}] 
+                    </div>
+                    <hr>
+                </div>
+                <div class="card" id="startsWith">
+                    <h2>Starts With</h2>
+                    <div class="code">
+                        validations: [{type: '<b>startsWith|a</b>'}]
+                    </div>
+                    <hr>
+                </div>
+                <div class="card" id="endsWith">
+                    <h2>Ends With</h2>
+                    <div class="code">
+                        validations: [{type: '<b>endsWith|z</b>'}]
+                    </div>
+                    <hr>    
+                </div>
+                <a href="#docList">
+                    <div class="fab">
+                        <i class="fa fa-arrow-up"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="https://github.com/Akifcan/correctjs">Github Repository</a></li>
+                <li><a href="https://www.npmjs.com/package/correctjs">Npm</a></li>
+            </ul>
+            <span class="seaLogo">Sea</span>
+        </div>
+    </footer>
+</body>
+</html>

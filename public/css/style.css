@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+header nav .logo {
+  letter-spacing: 5px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  padding: 1em;
+  border: none;
+  border-radius: .5em;
+  margin-top: .5em;
+  color: white;
+  cursor: pointer;
+}
+
+.npm {
+  background-color: #CC3535;
+}
+
+.github {
+  background-color: #211F1F;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  background-color: #635D5D;
+}
+
+.landing .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10%;
+  padding-top: 2em;
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.landing .text h1 {
+  font-weight: 300;
+  font-size: 3em;
+}
+
+.landing .text span {
+  font-weight: 200;
+}
+
+.landing .code-example {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 10%;
+}
+
+.landing .code-example .gist {
+  margin-top: 1em;
+  width: 100% !important;
+}
+
+.landing .code-example .gist-file
+.gist-data {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+.doc {
+  padding-top: .9em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.doc h1 {
+  position: relative;
+  margin-top: 2em;
+  font-weight: 300;
+}
+
+.doc h1:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  height: 50px;
+  width: 50px;
+  border-left: 5px solid #635D5D;
+}
+
+.doc .doc-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.doc .doc-list .sidebar {
+  margin-top: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 50vh;
+  border: 5px solid #000;
+}
+
+.doc .doc-list .sidebar ul {
+  list-style: none;
+}
+
+.doc .doc-list .sidebar ul li {
+  width: 100%;
+  margin-top: .5em;
+}
+
+.doc .doc-list .sidebar ul li:hover {
+  background-color: #635D5D;
+}
+
+.doc .doc-list .sidebar ul li:hover a {
+  color: white;
+}
+
+.doc .doc-list .sidebar ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding-left: .5em;
+  display: block;
+}
+
+.doc .doc-list .info {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-top: 2em;
+  margin-left: .5em;
+}
+
+.doc .doc-list .info .card {
+  padding-top: .5em;
+  padding-left: .5em;
+  width: 100%;
+  height: 20vh;
+}
+
+.doc .doc-list .info .card h2 {
+  margin-bottom: .5em;
+}
+
+.doc .doc-list .info .card hr {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.doc .doc-list .info .card .code {
+  padding-left: .5em;
+  color: white;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #635D5D;
+}
+
+footer {
+  background-color: #000;
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+}
+
+footer .footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .footer-links ul li {
+  margin-left: .5em;
+}
+
+footer .footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links .seaLogo {
+  font-family: Righteous;
+  opacity: .6;
+  pointer-events: none;
+  color: white;
+}
+
+footer .footer-links .seaLogo::-moz-selection {
+  background-color: #000;
+}
+
+footer .footer-links .seaLogo::selection {
+  background-color: #000;
+}
+
+.fab {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 3px solid white;
+  height: 50px;
+  width: 50px;
+  background-color: #635D5D;
+  border-radius: 3em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .landing {
+    height: 110vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landing .text {
+    font-size: .9em;
+  }
+  .landing .code-example {
+    margin: 0;
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  .doc-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
